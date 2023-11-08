@@ -1,0 +1,8 @@
+https://nextjs.org/docs/getting-started/installation
+
+npm install --global yarn
+yarn init -y
+yarn add next react react-dom
+npx gitignore node
+
+yarn dev - Roda o projeto
