@@ -1,3 +1,5 @@
+Unidade 1
+
 https://nextjs.org/docs/getting-started/installation
 
 npm install --global yarn
@@ -6,3 +8,23 @@ yarn add next react react-dom
 npx gitignore node
 
 yarn dev - Roda o projeto
+
+O uso do nextjs como SPA aconteceu quando se importou o Link do next, que fez com que 
+as paginas carreguem todas de uma vez na inicialização do sistema, otimizando ele, ao contrario de usando a com href.
+Sempre os elementos aparecem no inspect, porém do modo antido não aparecem no viewsorce, ja com o next aparece.
+Isso sinigica que com o next isso já vem renderizado.
+
+Unidade 2
+
+yarn build && yarn start (linux)
+yarn build ; yarn start (windows)
+
+next build && next export(mesmo no windows, criando atalho no package.json usa &&)
+Esse comando gera a pasta out com a build do projeto
+
+npx http-server ./out -c-1
+Esse compando executa um server sem cache com a pasta out
+
+Unidade 3
+
+yarn add @fortawesome/fontawesome-svg-core @fortawesome/free-solid-svg-icons @fortawesome/react-fontawesome
