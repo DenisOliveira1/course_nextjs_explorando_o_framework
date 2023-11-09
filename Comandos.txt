@@ -28,3 +28,7 @@ Esse compando executa um server sem cache com a pasta out
 Unidade 3
 
 yarn add @fortawesome/fontawesome-svg-core @fortawesome/free-solid-svg-icons @fortawesome/react-fontawesome
+
+Tudo na pasta public pode ser acessado pela url
+http://localhost:3000/robots.txt
+http://localhost:3000/images/alura-cases.png
