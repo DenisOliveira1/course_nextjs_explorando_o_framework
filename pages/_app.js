@@ -1,11 +1,11 @@
 import GlobalStyle from '../src/theme/GlobalStyle'
 
-function MyApp({Component, props}) {
+function MyApp({Component, pageProps }) {
     return (
         <>
             Middleware
             <GlobalStyle/>
-            <Component {...props} />
+            <Component {...pageProps } />
         </>
     )
 }

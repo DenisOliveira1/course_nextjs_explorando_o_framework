@@ -1,23 +1,25 @@
 import Link from '../src/components/Link'
-import { useEffect, useState } from 'react'
 
-
-
-export default function FAQPage() {
-
-    const [faq, setFaq] = useState([]);
+export async function getStaticProps() {
     const FAQ_API_URL = "https://gist.githubusercontent.com/omariosouto/0ceab54bdd8182cbd1a4549d32945c1a/raw/578ad1e8e5296fa048e3e7ff6b317f7497b31ad9/alura-cases-faq.json";
 
-    useEffect(() => {
+    const faq = await fetch(FAQ_API_URL)
+        .then((response) => response.json())
+        .then((response) => {
+            console.log("1", response);
+            return response;
+        });
+    console.log("2", faq);
+    
+    return {
+        props: {
+            faq
+        }
+    };
+}
 
-        fetch(FAQ_API_URL)
-            .then((response) => response.json())
-            .then((response) => {
-                setFaq(response);
-                console.log(response)
-            })
-    }, []);
-
+export default function FAQPage({ faq }) {
+    console.log("3", faq);
     return (
         <div>
             <h1>Alura Cases - FAQ</h1>
