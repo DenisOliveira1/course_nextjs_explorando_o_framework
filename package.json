@@ -15,7 +15,8 @@
     "dev": "next dev",
     "build": "next build",
     "export": "next build && next export",
-    "go": "next build && next export && npx http-server ./out -c-1",
+    "export go": "next build && next export && npx http-server ./out -c-1",
+    "bstart": "next build && next start",
     "start": "next start",
     "lint": "next lint"
   }
