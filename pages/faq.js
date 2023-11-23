@@ -1,4 +1,7 @@
-import Link from '../src/components/Link'
+// import Link from '../src/components/Link'
+import FAQScreen from '../src/screens/FAQScreen';
+
+export default FAQScreen; 
 
 // SSG - Static Side Generation
 // SSR - Server Side Rendering
@@ -34,24 +37,24 @@ export async function getServerSideProps() {
     };
 }
 
-export default function FAQPage({ faq }) {
-    console.log("3", faq);
-    return (
-        <div>
-            <h1>Alura Cases - FAQ</h1>
-            <Link href="/">
-                Ir para a Home
-            </Link>
-            <ul>
-                {faq.map(({ answer, question }) => (
-                    <li key={question}>
-                        <article>
-                            <h2>{question}</h2>
-                            <p>{answer}</p>
-                        </article>
-                    </li>
-                ))}
-            </ul>
-        </div>
-    )
-}
+// export default function FAQPage({ faq }) {
+//     console.log("3", faq);
+//     return (
+//         <div>
+//             <h1>Alura Cases - FAQ</h1>
+//             <Link href="/">
+//                 Ir para a Home
+//             </Link>
+//             <ul>
+//                 {faq.map(({ answer, question }) => (
+//                     <li key={question}>
+//                         <article>
+//                             <h2>{question}</h2>
+//                             <p>{answer}</p>
+//                         </article>
+//                     </li>
+//                 ))}
+//             </ul>
+//         </div>
+//     )
+// }
